@@ -1,5 +1,5 @@
 .gallery {
-    --s: 150px; /* control the size */
+    --s: 250px; /* control the size */
     --g: 10px;  /* control the gap */
     --f: 1.5;   /* control the scale factor */
     
@@ -25,5 +25,21 @@
     filter: grayscale(0);
     width:  calc(var(--s)*var(--f));
     height: calc(var(--s)*var(--f));
+  }
+  
+/* =========Responsive Design========= */
+
+@media (max-width: 768px) {
+    .gallery {
+      --s: 200px;
+      --g: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery {
+      --s: 13vh;
+      --g: 5px;
+    }
   }
   
